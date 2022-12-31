@@ -170,9 +170,9 @@ void UciEngine::startGame()
 			sendOption("UCI_RatingAdv", QString::number(rating() - opponent()->rating()));
 	}
 
-	ping();
-
 	sendPosition();
+
+	ping();
 }
 
 void UciEngine::endGame(const Chess::Result& result)
