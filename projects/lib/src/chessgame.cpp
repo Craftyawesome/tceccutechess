@@ -50,8 +50,8 @@ QString ChessGame::evalString(const MoveEvaluation& eval, const Chess::Move& mov
 			int absScore = qAbs(score);
 
 			// Detect mate-in-n scores
-			if (absScore > 9900
-			&&  (absScore = 1000 - (absScore % 1000)) < 100)
+			if (absScore > 98800
+			&&  (absScore = 1000 - (absScore % 1000)) < 200)
 			{
 				if (score < 0)
 					sScore = "-";
